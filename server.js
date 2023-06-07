@@ -45,7 +45,7 @@ app.post("/send-mail", function(req,res){
          message = req.body.message;
      //options
      const mailOptions = {
-          from: 'registrations@thpoint0.io',
+          from: 'info@meetkeypeople.com',
           to: to,                   // from req.body.to
           subject: subject,         //from req.body.subject
           html: message             //from req.body.message
