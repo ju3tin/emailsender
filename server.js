@@ -1,8 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const dbConfig = require("./app/config/db.config");
-const { createWallet, generatePrivateKey } = require('./app/routes/utils/hederaWallet');
+//const dbConfig = require("./app/config/db.config");
+//const { createWallet, generatePrivateKey } = require('./app/routes/utils/hederaWallet');
 const fetch = (...args) =>
 import('node-fetch').then(({ default: fetch }) => fetch(...args));
 globalThis.fetch = fetch;
@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const db = require("./app/models");
-const Role = db.role;
+//const db = require("./app/models");
+//const Role = db.role;
 // var express = require("express"), 
 router = express.Router();
 
@@ -63,30 +63,15 @@ app.post("/send-mail", function(req,res){
      res.json({ message: "message sent" });
 });
 
-db.mongoose
-  .connect(process.env.MONGO3, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log("Successfully connect to MongoDB.");
-    initial();
-  })
-  .catch(err => {
-    console.error("Connection error", err);
-    process.exit();
-  });
 
-
-  
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to TH.0 Community built by Justin Grierson" });
 });
 
 // routes
-require("./app/routes/auth.routes")(app);
-require("./app/routes/user.routes")(app);
+//require("./app/routes/auth.routes")(app);
+//require("./app/routes/user.routes")(app);
 
 //changed line 48 to 51
 // set port, listen for requests
