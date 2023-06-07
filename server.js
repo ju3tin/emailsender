@@ -1,8 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-//const dbConfig = require("./app/config/db.config");
-//const { createWallet, generatePrivateKey } = require('./app/routes/utils/hederaWallet');
 const fetch = (...args) =>
 import('node-fetch').then(({ default: fetch }) => fetch(...args));
 globalThis.fetch = fetch;
