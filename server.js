@@ -27,12 +27,12 @@ smtpTransport = require('nodemailer-smtp-transport');
 //setup nodemailer
 const nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport(smtpTransport({    
-     service: 'thpoint0.io',
-     host: 'mail.thpoint0.io',
+     service: 'meetkeypeople.com',
+     host: 'mail.meetkeypeople.com',
      port: 465, 
      auth: {        
-          user: 'registrations@thpoint0.io',        
-          pass: 'guwsez-jAzme1-hastac'    
+          user: 'info@meetkeypeople.com',        
+          pass: 'MKPrevolution661991!'    
      },
      tls: {
          rejectUnauthorized: false
