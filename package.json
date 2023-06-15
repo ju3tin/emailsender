@@ -41,10 +41,10 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/thpoint0/backend.git"
+      "url": "git+https://github.com/ju3tin/emailsender.git"
     },
     "bugs": {
-      "url": "https://github.com/thpoint0/backend/issues"
+      "url": "https://github.com/ju3tin/emailsender/issues"
     },
-    "homepage": "https://github.com/thpoint0/backend#readme"
+    "homepage": "https://github.com/ju3tin/emailsender#readme"
   }
