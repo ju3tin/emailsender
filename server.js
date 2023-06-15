@@ -64,7 +64,7 @@ app.post("/send-mail", function(req,res){
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to TH.0 Community built by Justin Grierson" });
+  res.json({ message: "Welcome to Meet Key People" });
 });
 
 // routes
