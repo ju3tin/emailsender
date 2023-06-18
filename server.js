@@ -58,7 +58,7 @@ app.post("/send-mail", function(req,res){
               console.log('Email sent: ' + info.response);  
           }   
      });
-   res.redirect('https://meetkeypeople.com/contact-us-thanks');
+ //  res.redirect('https://meetkeypeople.com/contact-us-thanks');
      res.json({ message: "message sent" });
  
 });
